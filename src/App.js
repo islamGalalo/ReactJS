@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Cards from "./Components/Cards";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App() {
+    return(
+    <div>
+        <Cards title = {"1st title"} desc={"desc1"}  />
+        <Cards game = {"2nd title"}  desc={"desc2"} />
+        <Cards game = {"3rd title"} desc={"desc3"}  />
+
     </div>
-  );
+    )
 }
-
-export default App;
