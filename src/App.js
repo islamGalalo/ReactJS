@@ -1,12 +1,26 @@
-import Cards from "./Components/Cards";
+import NavBar from "./NavBar";
+import "./App.css"
+import About from "./About";
+import {Skills} from "./Skills";
+import {Projects} from "./Components/Projects";
+import {Recommendation} from "./Recommendation";
+import RecommendationForm from "./RecommendationForm";
 
-export default function App() {
-    return(
-    <div>
-        <Cards title = {"1st title"} desc={"desc1"}  />
-        <Cards game = {"2nd title"}  desc={"desc2"} />
-        <Cards game = {"3rd title"} desc={"desc3"}  />
-
-    </div>
+export default function App(prop) {
+    return (<>
+        <NavBar/>
+        <About/>
+       <Skills/>
+            <Projects/>
+            <Recommendation/>
+            <RecommendationForm/>
+        </>
     )
-}
+
+
+            }
+
+
+
+
+
