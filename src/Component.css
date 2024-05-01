@@ -1,0 +1,6 @@
+.redBg{
+    background-color: rgba(224, 228, 7, 0.788);
+}
+.active {
+    border: solid 2px black;
+}

@@ -1,26 +1,19 @@
-import NavBar from "./NavBar";
-import "./App.css"
+
 import About from "./About";
-import {Skills} from "./Skills";
-import {Projects} from "./Components/Projects";
-import {Recommendation} from "./Recommendation";
-import RecommendationForm from "./RecommendationForm";
+import { Headers } from "./Headers";
+import { Post } from "./Post";
 
-export default function App(prop) {
-    return (<>
-        <NavBar/>
-        <About/>
-       <Skills/>
-            <Projects/>
-            <Recommendation/>
-            <RecommendationForm/>
-        </>
-    )
+export default function App() {
 
-
-            }
-
-
-
-
-
+  return (
+    <>
+      <div> 
+        <Headers />
+        <div style={{width:"50%"}}>
+            <About/>
+          <Post />
+        </div>
+      </div>
+    </>
+  );
+}
